@@ -50,7 +50,7 @@ public:
 	static UINT SnifferThread(LPVOID pParam);//抓包线程
 	afx_msg LRESULT OnPacketReceived(WPARAM wParam, LPARAM lParam);//处理抓到的数据的回调函数
 	afx_msg void OnBnClickedButtonStart();//开始抓包
-	afx_msg void OnBnClickedButtonRefresh();//刷新玩咖
+	afx_msg void OnBnClickedButtonRefresh();//刷新网卡
 	afx_msg void OnLvnItemchangedListPackets(NMHDR* pNMHDR, LRESULT* pResult);//列表选中
 	afx_msg void OnBnClickedCheckIpv4();//过滤IPV4
 	afx_msg void OnBnClickedCheckIpv6();//过滤IPV6

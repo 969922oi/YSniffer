@@ -490,10 +490,8 @@ void CYSnifferDlg::OnBnClickedButtonRefresh()
 		m_comboAdapter.SetItemData(idx, (DWORD_PTR)new CString(devName));
 	}
 
-	if (m_comboAdapter.GetCount() > 5)
-		m_comboAdapter.SetCurSel(5); //默认选中第6个
-	else if(m_comboAdapter.GetCount() > 0)
-		m_comboAdapter.SetCurSel(0);
+	if(m_comboAdapter.GetCount() > 0)
+		m_comboAdapter.SetCurSel(0);//默认选中第1个
 	pcap_freealldevs(alldevs);
 }
 
